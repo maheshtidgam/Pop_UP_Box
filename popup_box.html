@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up Box</title>
+    <style>
+        main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        button{
+            color: white;
+            background-color: red;
+            padding: 20px 30px;
+            cursor: pointer;
+            position: relative;
+            border-radius: 20px;
+
+        }
+
+        
+
+        div{
+            display: none;
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            background-color: #cc6969;
+            border: 2px solid;
+
+        }
+        div>p{
+            font-size: 30px;
+            font-weight: bolder;
+
+        }
+
+        main>button:active+div{
+            display: block;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+             <button>Read Info</button>
+             <div><p>This is the info</p></div>
+    </main>
+</body>
+</html>
